@@ -49,7 +49,7 @@ public class CreateTestObj {
 
 		def pbsHN=GlobalVariable.G_JobID
 		String xpath_jobIdentifireObj = (x1 + pbsHN) + x2
-   
+
 		println('********************************************')
 		println xpath_jobIdentifireObj
 		println('********************************************')

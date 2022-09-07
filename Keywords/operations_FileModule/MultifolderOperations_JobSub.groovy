@@ -34,16 +34,16 @@ public class MultifolderOperations_JobSub {
 
 
 			case 'Delete':
-			    
-			WebUI.doubleClick(findTestObject('JobMonitoringPage/ListView'))
-			extentTest.log(LogStatus.PASS, 'Double click on List view folder')
-			WebUI.delay(3)
-			WebUI.click(findTestObject('Object Repository/FilesPage/CheckBox_SelectAll-JS-RFB'))
-			extentTest.log(LogStatus.PASS, ' Click on select all ')
-			WebUI.rightClick(findTestObject('Object Repository/JobMonitoringPage/four'))
-			extentTest.log(LogStatus.PASS, 'Right click on folder to perform Delete operation')
-			
-			WebUI.click(findTestObject('JobMonitoringPage/Delete'))
+
+				WebUI.doubleClick(findTestObject('JobMonitoringPage/ListView'))
+				extentTest.log(LogStatus.PASS, 'Double click on List view folder')
+				WebUI.delay(3)
+				WebUI.click(findTestObject('Object Repository/FilesPage/CheckBox_SelectAll-JS-RFB'))
+				extentTest.log(LogStatus.PASS, ' Click on select all ')
+				WebUI.rightClick(findTestObject('Object Repository/JobMonitoringPage/four'))
+				extentTest.log(LogStatus.PASS, 'Right click on folder to perform Delete operation')
+
+				WebUI.click(findTestObject('JobMonitoringPage/Delete'))
 
 				WebUI.click(findTestObject('GenericObjects/btn_Yes'))
 			//WebUI.click(findTestObject('FilesPage/Icon_Close'))
@@ -57,13 +57,13 @@ public class MultifolderOperations_JobSub {
 				break
 
 			case 'Download':
-			WebUI.doubleClick(findTestObject('JobMonitoringPage/ListView'))
-			extentTest.log(LogStatus.PASS, 'Double click on List view folder')
-			WebUI.delay(3)
-			WebUI.click(findTestObject('Object Repository/FilesPage/CheckBox_SelectAll-JS-RFB'))
-			extentTest.log(LogStatus.PASS, ' Click on select all ')
-			WebUI.rightClick(findTestObject('Object Repository/JobMonitoringPage/four'))
-			extentTest.log(LogStatus.PASS, 'Right click on folder to perform Download operation')
+				WebUI.doubleClick(findTestObject('JobMonitoringPage/ListView'))
+				extentTest.log(LogStatus.PASS, 'Double click on List view folder')
+				WebUI.delay(3)
+				WebUI.click(findTestObject('Object Repository/FilesPage/CheckBox_SelectAll-JS-RFB'))
+				extentTest.log(LogStatus.PASS, ' Click on select all ')
+				WebUI.rightClick(findTestObject('Object Repository/JobMonitoringPage/four'))
+				extentTest.log(LogStatus.PASS, 'Right click on folder to perform Download operation')
 
 				TestObject newFileOp=WebUI.modifyObjectProperty(findTestObject('FilesPage/ContextMenu_JobSubmission_Download'), 'id', 'equals', Operation, true)
 				WebUI.click(newFileOp)
@@ -86,32 +86,32 @@ public class MultifolderOperations_JobSub {
 				return true
 				break
 
-             case 'New File':
-			 
-			 WebUI.doubleClick(findTestObject('JobMonitoringPage/ListView'))
-			 extentTest.log(LogStatus.PASS, 'Double click on List view folder')
-			 WebUI.delay(3)
-			 WebUI.click(findTestObject('Object Repository/FilesPage/CheckBox_SelectAll-JS-RFB'))
-			 extentTest.log(LogStatus.PASS, ' Click on select all ')
-			 WebUI.rightClick(findTestObject('Object Repository/JobMonitoringPage/four'))
-			 extentTest.log(LogStatus.PASS, 'Right click on folder to perform New File operation')
-			 
-			 WebUI.click(findTestObject('JobMonitoringPage/New File'))
-			 extentTest.log(LogStatus.PASS, 'Click on New File')
-			 def Renameto='NewFile.txt'
-			 TestObject renameTextBxObj = WebUI.modifyObjectProperty(findTestObject('FilesPage/NewFile_input'), 'value', 'equals', 'New Text Document.txt', true)
-			 WebUI.setText(renameTextBxObj, Renameto)
-			 extentTest.log(LogStatus.PASS, 'Renamed file to  '+Renameto)
+			case 'New File':
 
-			 WebUI.click(findTestObject('FilesPage/btn_Save'))
-			 WebUI.delay(3)
-			 extentTest.log(LogStatus.PASS, 'Clicked on Save Button')
-			 WebUI.click(findTestObject('Landing_Page/Btn_Notifiction'))
-			 result=WebUI.verifyElementPresent(findTestObject('Object Repository/Notificactions/Notification_FileCreation'), 5)
-			 extentTest.log(LogStatus.PASS, "Opened Notification Panel" )
-			 
-			 
-			 break
+				WebUI.doubleClick(findTestObject('JobMonitoringPage/ListView'))
+				extentTest.log(LogStatus.PASS, 'Double click on List view folder')
+				WebUI.delay(3)
+				WebUI.click(findTestObject('Object Repository/FilesPage/CheckBox_SelectAll-JS-RFB'))
+				extentTest.log(LogStatus.PASS, ' Click on select all ')
+				WebUI.rightClick(findTestObject('Object Repository/JobMonitoringPage/four'))
+				extentTest.log(LogStatus.PASS, 'Right click on folder to perform New File operation')
+
+				WebUI.click(findTestObject('JobMonitoringPage/New File'))
+				extentTest.log(LogStatus.PASS, 'Click on New File')
+				def Renameto='NewFile.txt'
+				TestObject renameTextBxObj = WebUI.modifyObjectProperty(findTestObject('FilesPage/NewFile_input'), 'value', 'equals', 'New Text Document.txt', true)
+				WebUI.setText(renameTextBxObj, Renameto)
+				extentTest.log(LogStatus.PASS, 'Renamed file to  '+Renameto)
+
+				WebUI.click(findTestObject('FilesPage/btn_Save'))
+				WebUI.delay(3)
+				extentTest.log(LogStatus.PASS, 'Clicked on Save Button')
+				WebUI.click(findTestObject('Landing_Page/Btn_Notifiction'))
+				result=WebUI.verifyElementPresent(findTestObject('Object Repository/Notificactions/Notification_FileCreation'), 5)
+				extentTest.log(LogStatus.PASS, "Opened Notification Panel" )
+
+
+				break
 
 
 

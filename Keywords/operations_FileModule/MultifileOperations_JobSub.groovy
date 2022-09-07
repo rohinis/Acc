@@ -35,7 +35,7 @@ public class MultifileOperations_JobSub {
 
 			case 'Delete':
 
-				
+
 				WebUI.click(findTestObject('Object Repository/FilesPage/CheckBox_SelectAll-JS-RFB'))
 				extentTest.log(LogStatus.PASS, ' Click on select all ')
 				WebUI.rightClick(findTestObject('Object Repository/JobMonitoringPage/File4'))
@@ -55,10 +55,10 @@ public class MultifileOperations_JobSub {
 				break
 
 			case 'Download':
-				
+
 				WebUI.click(findTestObject('Object Repository/FilesPage/CheckBox_SelectAll-JS-RFB'))
 				extentTest.log(LogStatus.PASS, ' Click on select all ')
-				
+
 				WebUI.rightClick(findTestObject('Object Repository/JobMonitoringPage/File4'))
 				extentTest.log(LogStatus.PASS, 'Right click on folder to perform Download operation')
 
@@ -85,7 +85,7 @@ public class MultifileOperations_JobSub {
 
 			case 'New File':
 
-				
+
 				WebUI.click(findTestObject('Object Repository/FilesPage/CheckBox_SelectAll-JS-RFB'))
 				extentTest.log(LogStatus.PASS, ' Click on select all ')
 				WebUI.rightClick(findTestObject('Object Repository/JobMonitoringPage/File4'))

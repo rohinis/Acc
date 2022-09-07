@@ -22,8 +22,14 @@ public class jobMonitorigColFilter {
 		WebUI.click(findTestObject('Preferences/Confirm_button'))
 		WebUI.click(findTestObject('Object Repository/Landing_Page/LandigPage_AltairAccess_Link'))
 		extentTest.log(LogStatus.PASS, 'Reset prefrences ')
-		
-		String [] ColName = ['Application', 'Queue', 'Status', 'User', 'Time']
+
+		String [] ColName = [
+			'Application',
+			'Queue',
+			'Status',
+			'User',
+			'Time'
+		]
 		String [] ColFilterLabel=[
 			'job_col_filter_application',
 			'job_col_filter_queueName',

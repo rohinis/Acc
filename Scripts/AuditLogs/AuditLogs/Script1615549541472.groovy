@@ -68,7 +68,7 @@ try
 
 		case 'ip add':
 		        
-		String value = '10.75.20.51'
+		String value = '127.0.0.1'
    
 		WebUI.delay(2)
 		result = WebUI.verifyElementPresent(findTestObject('Object Repository/AuditLogs/Ipadd'),5)
@@ -157,6 +157,8 @@ try
 			def Text11 = WebUI.getText(findTestObject('AuditLogs/Nolog'))
 		
 			extentTest.log(LogStatus.PASS, 'No Log message genereted - ' + Text11)
+			
+			WebUI.delay(3)
 			WebUI.verifyElementNotClickable(findTestObject('Object Repository/AuditLogs/ExportData'))
 			extentTest.log(LogStatus.PASS, ' Verify export data button is disabled ')
 			//WebUI.verifyElementNotClickable(findTestObject('Object Repository/AuditLogs/Pagination'))
@@ -168,6 +170,7 @@ try
 		case 'audit page' :
 		
 		WebUI.click(findTestObject('GenericObjects/TitleLink_Jobs'))
+		WebUI.delay(2)
 		
 		TestObject newAppObj = WebUI.modifyObjectProperty(findTestObject('NewJobPage/AppList_ShellScript'), 'id', 'equals',
 			AppName, true)
@@ -269,6 +272,7 @@ try
 			 extentTest.log(LogStatus.PASS, 'Add username name - ' + username )
 			 WebUI.sendKeys(findTestObject('Object Repository/AuditLogs/SearchBox'), Keys.chord(Keys.ENTER))
 			 extentTest.log(LogStatus.PASS, ' Hit on Enter ')
+			 WebUI.delay(3)
 			 WebUI.verifyElementPresent(findTestObject('AuditLogs/Nolog'), 3)
 			 extentTest.log(LogStatus.PASS, ' Verified that when user provides invalid search keyword, a message should be displayed No logs to show')
 			 WebUI.waitForElementPresent(findTestObject('AuditLogs/Nolog'), 5)

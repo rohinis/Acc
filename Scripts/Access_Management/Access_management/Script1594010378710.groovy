@@ -546,9 +546,10 @@ try
 	 
 	 WebUI.click(findTestObject('Access_Management/Add_resources'))
 	 extentTest.log(LogStatus.PASS, 'Click on add resources')
+	 WebUI.delay(2)
 	 
-	 WebUI.click(findTestObject('Access_Management/Shellscript_resource'))
-	 extentTest.log(LogStatus.PASS, 'Add Shellscript')
+	 WebUI.click(findTestObject('Access_Management/Optistruct_resource'))
+	 extentTest.log(LogStatus.PASS, 'Add Optistruct')
 	 
 	 WebUI.click(findTestObject('Access_Management/Confirm_button'))
 	 extentTest.log(LogStatus.PASS, 'Click on Confirm')
@@ -560,7 +561,7 @@ try
 	 WebUI.doubleClick(role)
 	 extentTest.log(LogStatus.PASS, 'Click on save')
 	 
-	 WebUI.click(findTestObject('Access_Management/Shellscript_resource'))
+	 WebUI.click(findTestObject('Access_Management/Optistruct_resource'))
 	 extentTest.log(LogStatus.PASS, 'Click on save')
 	 
 	 WebUI.click(findTestObject('Access_Management/Delete_resource'))

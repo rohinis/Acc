@@ -34,13 +34,13 @@ public class MultifilefolderOperations_JobSub {
 
 
 			case 'Delete':
-                
-			WebUI.doubleClick(findTestObject('JobMonitoringPage/MultiFileFolder'))
-			extentTest.log(LogStatus.PASS, 'Double click on MultiFileFolder folder')
-			
-			WebUI.doubleClick(findTestObject('JobMonitoringPage/MultiFileFolder'))
-			extentTest.log(LogStatus.PASS, 'Double click on MultiFileFolder folder')
-				
+
+				WebUI.doubleClick(findTestObject('JobMonitoringPage/MultiFileFolder'))
+				extentTest.log(LogStatus.PASS, 'Double click on MultiFileFolder folder')
+
+				WebUI.doubleClick(findTestObject('JobMonitoringPage/MultiFileFolder'))
+				extentTest.log(LogStatus.PASS, 'Double click on MultiFileFolder folder')
+
 				WebUI.delay(3)
 				WebUI.click(findTestObject('Object Repository/FilesPage/CheckBox_SelectAll-JS-RFB'))
 				extentTest.log(LogStatus.PASS, ' Click on select all ')
@@ -61,13 +61,13 @@ public class MultifilefolderOperations_JobSub {
 				break
 
 			case 'Download':
-			WebUI.doubleClick(findTestObject('JobMonitoringPage/MultiFileFolder'))
-			extentTest.log(LogStatus.PASS, 'Double click on MultiFileFolder folder')
-				WebUI.delay(3)
-				
 				WebUI.doubleClick(findTestObject('JobMonitoringPage/MultiFileFolder'))
 				extentTest.log(LogStatus.PASS, 'Double click on MultiFileFolder folder')
-				
+				WebUI.delay(3)
+
+				WebUI.doubleClick(findTestObject('JobMonitoringPage/MultiFileFolder'))
+				extentTest.log(LogStatus.PASS, 'Double click on MultiFileFolder folder')
+
 				WebUI.click(findTestObject('Object Repository/FilesPage/CheckBox_SelectAll-JS-RFB'))
 				extentTest.log(LogStatus.PASS, ' Click on select all ')
 				WebUI.rightClick(findTestObject('JobMonitoringPage/RowItem_JobdDeails'))
@@ -96,8 +96,8 @@ public class MultifilefolderOperations_JobSub {
 
 			case 'New File':
 
-			WebUI.doubleClick(findTestObject('JobMonitoringPage/MultiFileFolder'))
-			extentTest.log(LogStatus.PASS, 'Double click on MultiFileFolder folder')
+				WebUI.doubleClick(findTestObject('JobMonitoringPage/MultiFileFolder'))
+				extentTest.log(LogStatus.PASS, 'Double click on MultiFileFolder folder')
 				WebUI.delay(3)
 				WebUI.doubleClick(findTestObject('JobMonitoringPage/MultiFileFolder'))
 				extentTest.log(LogStatus.PASS, 'Double click on MultiFileFolder folder')

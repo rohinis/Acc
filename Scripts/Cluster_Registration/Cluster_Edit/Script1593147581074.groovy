@@ -67,9 +67,9 @@ try
 		WebUI.click(findTestObject('Cluster_Registration/Edit'))
 		extentTest.log(LogStatus.PASS, 'Edit Existing Cluster')
 		
-		WebUI.click(findTestObject('Cluster_Registration/Password'))
+		/*WebUI.click(findTestObject('Cluster_Registration/Password'))
 		WebUI.setText(findTestObject('Cluster_Registration/Password'),password)
-		extentTest.log(LogStatus.PASS, 'Add password')
+		extentTest.log(LogStatus.PASS, 'Add password')*/
 		
 		WebUI.click(findTestObject('Cluster_Registration/Addrootdir'))
 			

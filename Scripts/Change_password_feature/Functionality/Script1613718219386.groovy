@@ -18,8 +18,15 @@ import com.relevantcodes.extentreports.LogStatus as LogStatus
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
 import com.kms.katalon.core.exception.StepErrorException as StepErrorException
+//====================================================================================
+ReportFile = (GlobalVariable.G_ReportName + '.html')
+def extent = CustomKeywords.'generateReports.GenerateReport.create'(ReportFile, GlobalVariable.G_Browser, GlobalVariable.G_BrowserVersion)
+def LogStatus = com.relevantcodes.extentreports.LogStatus
+def extentTest = extent.startTest(TestCaseName)
+CustomKeywords.'toLogin.ForLogin.Login'(extentTest)
+//=====================================================================================
 
-def Browser = GlobalVariable.G_Browser
+/*def Browser = GlobalVariable.G_Browser
 
 String ReportFile = GlobalVariable.G_ReportName + '.html'
 
@@ -27,11 +34,10 @@ def extent = CustomKeywords.'reports.Generatereport.create'(ReportFile, GlobalVa
 
 def LogStatus = com.relevantcodes.extentreports.LogStatus
 
-def extentTest = extent.startTest(TestCaseName)
+def extentTest = extent.startTest(TestCaseName)*/
 
 try {
-WebUI.callTestCase(findTestCase('Generic/Login'), [('username') : GlobalVariable.G_userName, ('password') : GlobalVariable.G_Password],
-	FailureHandling.STOP_ON_FAILURE)
+
 	WebUI.delay(1)
 
 	extentTest.log(LogStatus.PASS, 'Navigated to url - ' + GlobalVariable.G_BaseUrl)
@@ -51,9 +57,9 @@ WebUI.callTestCase(findTestCase('Generic/Login'), [('username') : GlobalVariable
 extentTest.log(LogStatus.PASS, ('Verify the Title ' + title) + 'is present')
 
 	//set the old password
-	WebUI.setText(findTestObject('change_password/oldpasswd'), oldpassword)
+	WebUI.setText(findTestObject('change_password/oldpasswd'), GlobalVariable.G_Password)
 
-	extentTest.log(LogStatus.PASS, 'Entered oldpassword::' + oldpassword)
+	extentTest.log(LogStatus.PASS, 'Entered oldpassword::' + GlobalVariable.G_Password)
 	WebUI.delay(1)
 
 	WebUI.setText(findTestObject('Object Repository/change_password/newpasswd'),newpassword )

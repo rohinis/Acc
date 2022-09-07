@@ -25,6 +25,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForFileOperations</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -70,6 +71,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForFileOperations</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -115,6 +117,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForFileOperations</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>2e87df9f-6ea8-49e2-a8fa-78df7a77aadd</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -154,6 +157,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForFileOperations</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>a2eda6e4-c2dc-417c-a95f-2dcd645f0c43</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -193,6 +197,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForFolderOperations</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>0d6aac11-94cd-4129-b829-ef8f8f1f273d</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -238,6 +243,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForFolderOperations</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>47180c11-b256-4385-a0ed-bc3c7029984a</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -283,6 +289,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForFileViewer</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -319,6 +326,7 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/JobSubmission/JobSubmission-AddJobFiles</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -349,6 +357,7 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/JobSubmission/JobSubmission-AddJobScriptOption</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -403,6 +412,7 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/JobSubmission/JobSubmission-InvalidPath</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -433,6 +443,7 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/JobSubmission/JobSubmission-switchApplication</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -475,6 +486,7 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/JobSubmission/JobSubmission-VerifyLabel</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -508,6 +520,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForJobMonitoringGenericOperations</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>19255bed-729c-4d0d-90e4-0f1ff3b3ae65</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -541,6 +554,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForJobMonitoringGenericOperations</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -595,6 +609,7 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/JobSubmission/MultipleJobSubmissions</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -628,6 +643,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForJobMonitoringGenericOperations</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>d092280c-55eb-4a78-af85-fffafe1f88e0</testDataLinkId>
          <type>DATA_COLUMN</type>

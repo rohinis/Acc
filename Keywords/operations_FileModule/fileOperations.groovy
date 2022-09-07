@@ -230,8 +230,8 @@ public class fileOperations {
 
 				(new operations_FileModule.notifications()).getNotifications(msg,extentTest)
 				extentTest.log(LogStatus.PASS, 'out of notification')
-				
-				
+
+
 				return result
 				break
 
@@ -458,17 +458,17 @@ public class fileOperations {
 				WebUI.delay(5)
 				extentTest.log(LogStatus.PASS, ' Clicked on Download Menu Item')
 
-				File downloadFolder = new File(GlobalVariable.G_DownloadFolder)
-				List namesOfFiles = Arrays.asList(downloadFolder.list())
-				if (namesOfFiles.contains('ToDownload_LV.txt')) {
-					println('success')
-					//extentTest.log(LogStatus.PASS, 'file to downloaded ')
-
-				} else {
-					println('fail')
-				}
-				extentTest.log(LogStatus.PASS, 'Verified file existes on host machine at path - '+GlobalVariable.G_DownloadFolder)
-
+			/*	File downloadFolder = new File(GlobalVariable.G_DownloadFolder)
+			 List namesOfFiles = Arrays.asList(downloadFolder.list())
+			 if (namesOfFiles.contains('ToDownload_LV.txt'))
+			 {
+			 println('success')
+			 //extentTest.log(LogStatus.PASS, 'file to downloaded ')
+			 } else {
+			 println('fail')
+			 }
+			 extentTest.log(LogStatus.PASS, 'Verified file existes on host machine at path - '+GlobalVariable.G_DownloadFolder)
+			 */
 				return true
 				break
 
@@ -500,7 +500,7 @@ public class fileOperations {
 				WebUI.delay(3)
 				WebUI.click(findTestObject('FilesPage/Icon_Close'))
 				TestObject newFileObj
-				
+
 				if(TestCaseName.contains('tile view')) {
 					oriFileName='ToDelete_TV.txt'
 					newFileObj = WebUI.modifyObjectProperty(findTestObject('FilesPage/RowItem_File_TileView'), 'title', 'equals',oriFileName, true)
@@ -510,7 +510,7 @@ public class fileOperations {
 					newFileObj = WebUI.modifyObjectProperty(findTestObject('FilesPage/RowItem_File_ListView'), 'title', 'equals',oriFileName, true)
 				}
 				def isDelFilePresent=WebUI.waitForElementVisible(newFileObj, 3,FailureHandling.CONTINUE_ON_FAILURE)
-				
+
 				if(isDelFilePresent==false){
 					result=true
 					extentTest.log(LogStatus.PASS, 'Verified deleted file - '+ oriFileName +' not listed')
@@ -518,7 +518,7 @@ public class fileOperations {
 
 				if (result) {
 					extentTest.log(LogStatus.PASS, ' Deleted file and verified notification')
-				//	extentTest.log(LogStatus.PASS, ('Notification with msg - "' + msg) + '" is listed')
+					//	extentTest.log(LogStatus.PASS, ('Notification with msg - "' + msg) + '" is listed')
 				}
 				else {
 					extentTest.log(LogStatus.PASS, '  Not deleted')

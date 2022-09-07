@@ -56,10 +56,10 @@ public class ForLogin {
 
 		def jobsTab = (new customWait.WaitForElement()).WaitForelementPresent(findTestObject('NewJobPage/AppList_ShellScript'),	10,extentTest, 'Application - ShellScript loaded ')
 
-		if (jobsTab) {
-			WebUI.click(findTestObject('Object Repository/Landing_Page/LandigPage_AltairAccess_Link'))
-		}
+			if (jobsTab) {
+		WebUI.click(findTestObject('Object Repository/Landing_Page/LandigPage_AltairAccess_Link'))
+			}
 
-		extentTest.log(LogStatus.PASS, 'Verified AltairAccess Logo post login ')
+			extentTest.log(LogStatus.PASS, 'Verified AltairAccess Logo post login ')
 	}
 }

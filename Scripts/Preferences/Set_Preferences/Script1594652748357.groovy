@@ -102,7 +102,7 @@ try {
 			WebUI.click(prefer)
 			extentTest.log(LogStatus.PASS, 'Click on preference')
 
-			WebUI.verifyElementPresent(findTestObject('Preferences/Remotesession'), 5)
+			WebUI.verifyElementPresent(findTestObject('Preferences/Resolution'), 5)
 			extentTest.log(LogStatus.PASS, 'Verify Remote session resolution')
 
 			break

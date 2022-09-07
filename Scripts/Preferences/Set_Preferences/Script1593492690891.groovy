@@ -78,8 +78,11 @@ try {
 
 
 			WebUI.verifyElementPresent(findTestObject('Preferences/Reset_popup'), 2)
+			extentTest.log(LogStatus.PASS, 'Verify the pop up ')
+			
+			break
 
-		case 'Remote Session':
+		case 'Desktops':
 
 			WebUI.click(findTestObject('Preferences/Profiletab'))
 			extentTest.log(LogStatus.PASS, 'Click on profile tab')
@@ -93,8 +96,8 @@ try {
 			extentTest.log(LogStatus.PASS, 'Click on preference')
 			WebUI.delay(3)
 
-			WebUI.verifyElementPresent(findTestObject('Preferences/Remotesession'), 5)
-			extentTest.log(LogStatus.PASS, 'Verify Remote session resolution')
+			WebUI.verifyElementPresent(findTestObject('Preferences/Resolution'), 5)
+			extentTest.log(LogStatus.PASS, 'Verify desktop resolution resolution')
 
 			break
 
@@ -131,7 +134,7 @@ try {
 			WebUI.click(findTestObject('Preferences/Profile'))
 			extentTest.log(LogStatus.PASS, 'Click on profile')
 
-
+            break
 
 		case 'Notifications On':
 
@@ -153,7 +156,7 @@ try {
 
 			'Navigate to Files Tab\r\n'
 
-
+/*
 			def isElemenetPresent=CustomKeywords.'customWait.WaitForElement.WaitForelementPresent'(findTestObject('GenericObjects/TitleLink_Files'),5)
 
 			if (isElemenetPresent)
@@ -161,7 +164,9 @@ try {
 				WebUI.click(findTestObject('GenericObjects/TitleLink_Files'))
 				extentTest.log(LogStatus.PASS, "Navigated to Files Tab" )
 			}
-
+*/
+			WebUI.click(findTestObject('GenericObjects/TitleLink_Files'))
+			extentTest.log(LogStatus.PASS, "Navigated to Files Tab" )
 
 			WebUI.delay(2)
 			WebUI.waitForElementVisible(findTestObject('FilesPage/btn_NewFileFolder'), 5)
@@ -188,6 +193,7 @@ try {
 			extentTest.log(LogStatus.PASS, "Clicked on Save Button" )
 
 			WebUI.verifyElementPresent(findTestObject('Preferences/Notification_popup'), 2)
+			extentTest.log(LogStatus.PASS, "Verify the notification pop up" )
 
 			break
 
@@ -212,7 +218,7 @@ try {
 
 			'Navigate to Files Tab\r\n'
 
-
+            /*
 			def isElemenetPresent=CustomKeywords.'customWait.WaitForElement.WaitForelementPresent'(findTestObject('GenericObjects/TitleLink_Files'),5)
 
 			if (isElemenetPresent)
@@ -221,6 +227,9 @@ try {
 				extentTest.log(LogStatus.PASS, "Navigated to Files Tab" )
 			}
 
+             */
+			WebUI.click(findTestObject('GenericObjects/TitleLink_Files'))
+			extentTest.log(LogStatus.PASS, "Navigated to Files Tab" )
 
 			WebUI.delay(2)
 			WebUI.waitForElementVisible(findTestObject('FilesPage/btn_NewFileFolder'), 5)
@@ -281,12 +290,14 @@ try {
 		//	WebUI.doubleClick(newAppObj)
 			WebUI.delay(2)
 
+			/*
 			def errorPanel = CustomKeywords.'customWait.WaitForElement.WaitForelementPresent'(findTestObject('JobSubmissionForm/JS_ErrorModalPanel'),
 					5)
 
 			if (errorPanel) {
 				WebUI.click(findTestObject('Object Repository/JobSubmissionForm/button_Close'))
 			}
+			*/
 
 			WebUI.click(findTestObject('Object Repository/NewJobPage/GenericProfile'))
 

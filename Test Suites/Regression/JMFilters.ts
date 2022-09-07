@@ -25,6 +25,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataJobFiltersSave</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>1ecd16e6-f554-4e36-9aec-221ca4cfdf1f</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -82,6 +83,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataJobFilters</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>cbfd5f43-85fb-4643-82b4-2d15b16692fb</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -124,6 +126,7 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/JobMonitoring/JobFilters-SaveFilters-MaxCount</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -172,6 +175,7 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/JobMonitoring/JobFilters-SaveFilters-DeleteFilter</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -220,6 +224,7 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/JobMonitoring/JobSeacrh</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -254,11 +259,12 @@
          <combinationType>ONE</combinationType>
          <id>15edd67c-c0dc-4e38-88b2-0134b4014119</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
+            <iterationType>SPECIFIC</iterationType>
             <value>1-4</value>
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForJobMonitoringGenericOperations</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>15edd67c-c0dc-4e38-88b2-0134b4014119</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -288,10 +294,11 @@
          <id>83f9b37a-0b3d-4bb9-a947-fdbac6bf3f07</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
-            <value></value>
+            <value>20-24</value>
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForAddingColJobtable</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>83f9b37a-0b3d-4bb9-a947-fdbac6bf3f07</testDataLinkId>
          <type>DATA_COLUMN</type>

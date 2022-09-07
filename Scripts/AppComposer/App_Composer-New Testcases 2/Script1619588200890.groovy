@@ -310,10 +310,17 @@ try
 			WebUI.click(findTestObject('AppComposer/Withoutpublish'))
 			extentTest.log(LogStatus.PASS, 'Click on app on left side')
 
+			
+			WebUI.delay(3)
 			WebUI.click(findTestObject('AppComposer/Submit_btn'))
 			extentTest.log(LogStatus.PASS, 'Click on submit and test  button')
 
 			WebUI.delay(4)
+			
+			WebUI.click(findTestObject('AppComposer/CloseButton'))
+			extentTest.log(LogStatus.PASS, 'Click on cancel ')
+			
+		result = WebUI.verifyElementPresent(findTestObject('AppComposer/Submit_btn'), 3)
 			/*
 
            WebUI.verifyElementPresent(findTestObject('AppComposer/RunningFolder'),10)
@@ -430,10 +437,14 @@ try
 			result=WebUI.verifyElementPresent(findTestObject('AppComposer/Editappnew'), 3)
 		
 			  if(result)
+			  {
 				extentTest.log(LogStatus.PASS, 'Verify app has been renamed to Editappnew and present on jobs page')
+			  }
 				else
-			  extentTest.log(LogStatus.FAIL, 'Failed to verify the renamed app')
-
+			 
+				{ 
+					 extentTest.log(LogStatus.FAIL, 'Failed to verify the renamed app')
+				}
 
 			break
 
@@ -495,13 +506,13 @@ try
 
 			WebUI.click(findTestObject('Object Repository/AppComposer/Ellipses'))
 			extentTest.log(LogStatus.PASS, 'Select the app created and click on ellipses')
-			WebUI.delay(3)
+			WebUI.delay(5)
 
 			result=WebUI.verifyElementNotPresent(findTestObject('AppComposer/Edit'), 10)
 			if(result)
 			extentTest.log(LogStatus.PASS, 'Verify Edit option not present')
 			else
-				extentTest.log(LogStatus.FAIL, 'Failed to verfy')
+				extentTest.log(LogStatus.FAIL, 'Failed to verify')
 
 			break
 
@@ -516,6 +527,7 @@ try
 
 			WebUI.click(findTestObject('AppComposer/Publishapp'))
 			extentTest.log(LogStatus.PASS, 'Click on ' + app+ ' in left navigation , only admin user able to publish it globally')
+			
 
 			WebUI.click(findTestObject('Preferences/Profiletab'))
 			extentTest.log(LogStatus.PASS, 'Click on profile tab')
@@ -547,7 +559,7 @@ try
 		
 			
 			extentTest.log(LogStatus.PASS, 'Navigated to Jobs Tab')
-			//WebUI.verifyElementPresent(findTestObject('AppComposer/Publishapp_jobs'), 8)
+			result = WebUI.verifyElementPresent(findTestObject('AppComposer/Publishapp_jobs'), 8)
 			
 				extentTest.log(LogStatus.PASS, 'Verify Publishapp is present in app composer and in jobs page ')
 			

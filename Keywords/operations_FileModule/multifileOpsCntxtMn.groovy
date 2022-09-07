@@ -202,7 +202,7 @@ public class multifileOpsCntxtMn {
 				WebUI.click(findTestObject('GenericObjects/btn_Yes'))
 				extentTest.log(LogStatus.PASS, 'Clicked on Yes on Delete confirmation pop-up ')
 				msg = '5 item deleted successfully'
-			(new operations_FileModule.notifications()).getNotifications(msg,extentTest)
+				(new operations_FileModule.notifications()).getNotifications(msg,extentTest)
 				String myXpath=null;
 				String myText=null;
 				String item=null
@@ -337,7 +337,7 @@ public class multifileOpsCntxtMn {
 
 					WebUI.click(findTestObject('Object Repository/FilesPage/ContextMenu_FileGrid_Download'))
 				}
-				WebUI.delay(5)
+			/*	WebUI.delay(5)
 
 				File downloadFolder = new File(GlobalVariable.G_DownloadFolder)
 
@@ -349,7 +349,7 @@ public class multifileOpsCntxtMn {
 
 				} else {
 					println('fail')
-				}
+				}*/
 
 				return true
 				break

@@ -64,8 +64,7 @@ public class CreateFolderPageTestObj {
 		WebUI.sendKeys(findTestObject('JobDetailsPage/TextBx_DetailsFilter'), Keys.chord(Keys.ENTER))
 		extentTest.log(LogStatus.PASS, 'Looking for archived file, search text entered - '+fileNew)
 		WebUI.delay(2)
-		if(TestCaseName.contains('tile view'))
-		{
+		if(TestCaseName.contains('tile view')) {
 
 			String xpath_compressedfileXpathTV = "//label[(contains(text(), 'MyFolderCompress_TV_archive_'))]"
 			println xpath_compressedfileXpathTV

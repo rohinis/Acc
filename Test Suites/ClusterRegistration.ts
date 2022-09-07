@@ -25,6 +25,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataforCluster_Registration</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>13775440-d6f0-4501-8fbc-d05bb9b3a5b7</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -77,7 +78,7 @@
    <testCaseLink>
       <guid>52b25edc-fd2d-4c56-8538-bd2da41216e0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Cluster_Registration/Cluster_Edit</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -88,6 +89,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataforCluster_Registration</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>c7961622-6d94-433e-b9a8-4762502d1af7</testDataLinkId>
          <type>DATA_COLUMN</type>

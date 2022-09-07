@@ -23,7 +23,15 @@ public class AuditLog {
 			'entityName',
 			'result'
 		]
-		String [] tabHeaderLabel = ['time', 'username', 'ipaddress', 'action', 'Type' , 'name', 'status']
+		String [] tabHeaderLabel = [
+			'time',
+			'username',
+			'ipaddress',
+			'action',
+			'Type' ,
+			'name',
+			'status'
+		]
 
 		int i =0
 		for (String name:tabHeader) {
@@ -36,8 +44,7 @@ public class AuditLog {
 			List<WebElement> listElement = katalonWebDriver.findElements(By.xpath(myXpath))
 			println("-------------------------------------")
 			println listElement.size()
-			if(listElement.size() > 0)
-			{
+			if(listElement.size() > 0) {
 				println("-------------------------------------")
 				def x=listElement.size()
 				extentTest.log(LogStatus.PASS, "value for "+tabHeaderLabel[i]  +"--- "+header)
@@ -46,8 +53,7 @@ public class AuditLog {
 				extentTest.log(LogStatus.PASS, "text --- "+myText)
 				i++
 			}
-			else
-			{
+			else {
 				WebUI.delay(2)
 			}
 		}

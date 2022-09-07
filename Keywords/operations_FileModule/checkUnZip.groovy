@@ -31,8 +31,7 @@ public class checkUnZip {
 		def isUploadDialogPresent=(new customWait.WaitForElement()).WaitForelementPresent(findTestObject('Object Repository/Title_label_UnzipOnUpload'),5, extentTest, 'Unzip Confirmation dialog')
 		def isUnzipMsgPresent=(new customWait.WaitForElement()).WaitForelementPresent(findTestObject('Object Repository/2020.1/Verify_unzip_message'),5, extentTest, 'Unzip Confirmation msg')
 		WebUI.delay(2)
-		if(isUploadDialogPresent)
-		 {
+		if(isUploadDialogPresent) {
 			if(TestCaseName.contains('tile view')) {
 
 				CompressedFileXpath="//label[@title = 'ToUploadTV.zip']"
@@ -55,8 +54,7 @@ public class checkUnZip {
 				newUnZipFolderObj.addProperty('xpath', ConditionType.EQUALS, FolderXpath)
 				newFileObj = WebUI.modifyObjectProperty(findTestObject('FilesPage/RowItem_File_ListView'), 'title', 'equals', 'ToUpload.txt', true)
 			}
-			switch(userChoice)
-			 {
+			switch(userChoice) {
 				case 'Yes':
 					WebUI.click(findTestObject('Object Repository/FilesPage/button_Yes'))
 					extentTest.log(LogStatus.PASS, 'Clicked YES on Unzip on Upload confirmation pop-up')

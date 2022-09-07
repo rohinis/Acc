@@ -21,10 +21,11 @@
          <id>1f55dc43-3867-4203-90bb-3d5699f2e36f</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
-            <value></value>
+            <value>1-5</value>
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForProfiles</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>1f55dc43-3867-4203-90bb-3d5699f2e36f</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -78,10 +79,11 @@
          <id>3aeb5b86-e6e0-4013-ae1f-b9c4fa9befa4</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
-            <value></value>
+            <value>9</value>
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForProfileSubmissions</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>3aeb5b86-e6e0-4013-ae1f-b9c4fa9befa4</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -129,10 +131,11 @@
          <id>c72608c6-12cd-4667-91cf-9b6146e0a52b</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>1-15</value>
+            <value>1-20</value>
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForProfiles</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>c72608c6-12cd-4667-91cf-9b6146e0a52b</testDataLinkId>
          <type>DATA_COLUMN</type>

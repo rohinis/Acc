@@ -107,7 +107,11 @@ public class jobSubmissionForPreReq {
 
 
 		String [] DirName = ['C1', 'R1', 'F1']
-		String [] ZipName = [filePathOpsCom, filePathOps, filePathOps]
+		String [] ZipName = [
+			filePathOpsCom,
+			filePathOps,
+			filePathOps
+		]
 		String [] NavFolder=['OpsCompleted', 'Ops', 'Ops']
 		int i =0
 
@@ -200,7 +204,13 @@ public class jobSubmissionForPreReq {
 					'id', 'equals', idForCntxtMn, true)
 			WebUI.click(newRFBContextMnOption)
 			println('context menu ')
-			String [] JobFiles = ['ToDelete.txt', 'ToOpen.txt', 'ToOpenWith.txt', 'ToRename.txt', 'ToEdit.txt']
+			String [] JobFiles = [
+				'ToDelete.txt',
+				'ToOpen.txt',
+				'ToOpenWith.txt',
+				'ToRename.txt',
+				'ToEdit.txt'
+			]
 			int x=0
 			for (String name1:JobFiles) {
 				String JF =JobFiles[x]

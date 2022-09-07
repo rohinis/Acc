@@ -25,6 +25,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataforCluster_Registration</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>13775440-d6f0-4501-8fbc-d05bb9b3a5b7</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -88,6 +89,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataforCluster_Registration</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>c7961622-6d94-433e-b9a8-4762502d1af7</testDataLinkId>
          <type>DATA_COLUMN</type>

@@ -13,7 +13,7 @@
       <name>TestCaseName</name>
    </variable>
    <variable>
-      <defaultValue>'samitan'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>97b65ffa-b5d0-429d-9799-4d154bc186bb</id>
       <masked>false</masked>
@@ -41,7 +41,7 @@
       <name>userChoice</name>
    </variable>
    <variable>
-      <defaultValue>'demo'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>6a6999c4-2652-4212-bee1-ea6d888e1150</id>
       <masked>false</masked>

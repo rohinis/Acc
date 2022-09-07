@@ -25,6 +25,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForAppComposer</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>dfc5e0e4-e4ae-47f6-b597-b4098b904dd0</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -65,17 +66,18 @@
    <testCaseLink>
       <guid>18274b42-5139-4fae-b039-6161fb993f46</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/AppComposer/App_Composer-New Testcases</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>fe83f76e-d84a-49af-bb2b-b8399dd4243a</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
+            <iterationType>SPECIFIC</iterationType>
             <value>1-7</value>
          </iterationEntity>
          <testDataId>Data Files/Regression/AppComposer2</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>fe83f76e-d84a-49af-bb2b-b8399dd4243a</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -110,17 +112,18 @@
    <testCaseLink>
       <guid>a19a487b-86ce-411a-97ab-975c982fceb1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/AppComposer/App_Composer-New Testcases 2</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>8de64429-f771-4bf5-a242-8480aea6e7aa</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
+            <iterationType>SPECIFIC</iterationType>
             <value>8-17</value>
          </iterationEntity>
          <testDataId>Data Files/Regression/AppComposer2</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>8de64429-f771-4bf5-a242-8480aea6e7aa</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -161,11 +164,12 @@
          <combinationType>ONE</combinationType>
          <id>94f23c8b-abf5-4c5a-8736-27a20859b069</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>18-19</value>
+            <iterationType>SPECIFIC</iterationType>
+            <value>18,19</value>
          </iterationEntity>
          <testDataId>Data Files/Regression/AppComposer2</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>94f23c8b-abf5-4c5a-8736-27a20859b069</testDataLinkId>
          <type>DATA_COLUMN</type>

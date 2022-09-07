@@ -65,14 +65,18 @@ try
 	
 	if (userChoice.contains('valid'))
 	{   
-	    WebUI.rightClick(findTestObject('Cluster_Registration/Available'))
-		WebUI.delay(3)
+	   
+		boolean ispresent=WebUI.verifyElementPresent(findTestObject('Cluster_Registration/Available'), 3, FailureHandling.CONTINUE_ON_FAILURE)
+		if(ispresent) {
+			WebUI.rightClick(findTestObject('Cluster_Registration/Available'))
+			WebUI.delay(3)
+		
 		WebUI.click(findTestObject('Cluster_Registration/Delete'))
 		extentTest.log(LogStatus.PASS, 'Delete Existing Cluster')
 		
 		WebUI.click(findTestObject('FilesPage/Confirm_button'))
 		extentTest.log(LogStatus.PASS, 'Click on Ok button')
-		
+		}
 		WebUI.click(findTestObject('Cluster_Registration/Configure_Services'))
 		extentTest.log(LogStatus.PASS, 'Click on Configure Service')
 		
@@ -88,9 +92,9 @@ try
 		WebUI.setText(findTestObject('Cluster_Registration/Username'),username)
 		extentTest.log(LogStatus.PASS, 'Add username' + username)
 		
-		WebUI.click(findTestObject('Cluster_Registration/Password'))
+		/*WebUI.click(findTestObject('Cluster_Registration/Password'))
 		WebUI.setText(findTestObject('Cluster_Registration/Password'),password)
-		extentTest.log(LogStatus.PASS, 'Add password' + password)
+		extentTest.log(LogStatus.PASS, 'Add password' + password)*/
 		
 		WebUI.click(findTestObject('Cluster_Registration/Rootdir'))
 		WebUI.setText(findTestObject('Cluster_Registration/Rootdir'),rootdir)
@@ -140,9 +144,9 @@ try
 		WebUI.setText(findTestObject('Cluster_Registration/Username'),username)
 		extentTest.log(LogStatus.PASS, 'Add username' + username)
 		
-		WebUI.click(findTestObject('Cluster_Registration/Password'))
+	/*	WebUI.click(findTestObject('Cluster_Registration/Password'))
 		WebUI.setText(findTestObject('Cluster_Registration/Password'),password)
-		extentTest.log(LogStatus.PASS, 'Add password' + password)
+		extentTest.log(LogStatus.PASS, 'Add password' + password)*/
 		
 		WebUI.click(findTestObject('Cluster_Registration/Rootdir'))
 		WebUI.setText(findTestObject('Cluster_Registration/Rootdir'),rootdir)
@@ -170,15 +174,19 @@ try
 	else if (userChoice.contains('delete cluster'))
 	{
 		WebUI.delay(2)
+		boolean clusterpresent=WebUI.verifyElementPresent(findTestObject('Cluster_Registration/Available'), 3, FailureHandling.CONTINUE_ON_FAILURE)
+		if(clusterpresent) {
 		WebUI.rightClick(findTestObject('Cluster_Registration/Available'))
 		WebUI.click(findTestObject('Cluster_Registration/Delete'))
 		extentTest.log(LogStatus.PASS, 'Delete Existing Cluster')
 		
 		WebUI.click(findTestObject('FilesPage/Confirm_button'))
 		extentTest.log(LogStatus.PASS, 'Click on Ok')
+		}
 		
 		WebUI.verifyElementPresent(findTestObject('Cluster_Registration/Configure_Services'), 2)
 		extentTest.log(LogStatus.PASS, 'Click on Configure Service')
+		
 	}
 	
 		if (GlobalVariable.G_Browser == 'IE') {

@@ -62,19 +62,16 @@ public class ChangeView {
 			}
 
 			editIcon=(new customWait.WaitForElement()).WaitForelementPresent(findTestObject('Object Repository/FilesPage/Icon_EditFilePath'), 5,extentTest, 'Page Loaded')
-			if(editIcon)
-			{
+			if(editIcon) {
 				extentTest.log(LogStatus.PASS, 'Page loaded after changing the view')
 			}
-			else
-			{
+			else {
 				extentTest.log(LogStatus.PASS, 'Page not loaded after changing the view')
 				extentTest.log(LogStatus.PASS, 'Refreshing the browser ')
 				WebUI.refresh()
 				WebUI.delay(3)
 				int i
-				while (editIcon == false && i<10)
-				{
+				while (editIcon == false && i<10) {
 					WebUI.delay(1)
 					try {
 						WebUI.verifyElementPresent(findTestObject('Object Repository/FilesPage/Icon_EditFilePath'), 1)

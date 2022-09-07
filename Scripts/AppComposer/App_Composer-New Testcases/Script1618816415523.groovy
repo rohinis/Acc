@@ -266,6 +266,30 @@ try
 			
 			break
 			
+			case'Publishall':
+			
+		
+			WebUI.click(findTestObject('AppComposer/Publishall'))
+			extentTest.log(LogStatus.PASS, 'Click on Publish to all button')
+			WebUI.delay(5)
+			//WebUI.click(findTestObject('AppComposer/Ok_btn'))
+			//extentTest.log(LogStatus.PASS, 'Click on Ok button , PAS configuration change pop up')
+			
+			WebUI.delay(3)
+			
+			result=WebUI.verifyElementPresent(findTestObject('Object Repository/AppComposer/Configuration'), 10)
+			
+			WebUI.click(findTestObject('AppComposer/Ok_btn'))
+			extentTest.log(LogStatus.PASS, 'Click on Ok button , PAS configuration change pop up')
+			if(result)
+			extentTest.log(LogStatus.PASS, 'Verify the popup:There is a change in PAS configuration. ')
+			else
+				extentTest.log(LogStatus.FAIL, 'Failed to verify the popup. ')
+			
+			
+			
+			break
+			
 			case 'New':
 			
 			
@@ -414,7 +438,7 @@ try
 			
 			case'Publish App':
 			
-			println('hhjhj')
+			
 			WebUI.delay(3)
 			
 			WebUI.click(findTestObject('AppComposer/Publishall'))
@@ -457,8 +481,8 @@ try
 			rob.keyPress(KeyEvent.VK_BACK_SPACE)
 			rob.keyRelease(KeyEvent.VK_BACK_SPACE)
 			WebUI.setText(findTestObject('Object Repository/AppComposer/Text'), '')
-			WebUI.setText(findTestObject('Object Repository/AppComposer/Text'), 'demo')
-			extentTest.log(LogStatus.PASS, 'Add roleid name - demo')
+			WebUI.setText(findTestObject('Object Repository/AppComposer/Text'), 'abc')
+			extentTest.log(LogStatus.PASS, 'Add roleid name - abc')
 			
 			WebUI.click(findTestObject('Access_Management/Confirm_button'))
 			extentTest.log(LogStatus.PASS, 'Click on save')
@@ -480,7 +504,7 @@ try
 			extentTest.log(LogStatus.PASS, 'Click on add resources icon')
 			WebUI.delay(3)
 			
-			TestObject role =WebUI.modifyObjectProperty(findTestObject('Access_Management/Roleinfo'),'text', 'equals','Demo', true)
+			TestObject role =WebUI.modifyObjectProperty(findTestObject('Access_Management/Roleinfo'),'text', 'equals','abc', true)
 			WebUI.doubleClick(role)
 			extentTest.log(LogStatus.PASS, 'Click on added role')
 			

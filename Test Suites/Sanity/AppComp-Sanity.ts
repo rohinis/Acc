@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>7c901d33-1ceb-4e85-8171-fbb84e26639d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/AppComposer/App_Composer</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -66,13 +66,13 @@
    <testCaseLink>
       <guid>9a54f18b-142c-4bba-814b-2456d991b689</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/AppComposer/App_Composer-New Testcases</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>def05681-ad99-4ca0-8381-8005037feabf</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
+            <iterationType>SPECIFIC</iterationType>
             <value>7-12</value>
          </iterationEntity>
          <testDataId>Data Files/Sanity/AppComp</testDataId>
@@ -108,12 +108,6 @@
          <value>input</value>
          <variableId>500aa8ee-08f2-499c-af68-5e7ff18ef162</variableId>
       </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>1ade2340-265d-40e0-a4c9-36b8709f2903</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>f417f931-d623-4770-98b7-0a4f90a15022</guid>
@@ -124,7 +118,7 @@
          <combinationType>ONE</combinationType>
          <id>61f54222-daec-495d-bc77-9483e72d7f02</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
+            <iterationType>SPECIFIC</iterationType>
             <value>13-16</value>
          </iterationEntity>
          <testDataId>Data Files/Sanity/AppComp</testDataId>

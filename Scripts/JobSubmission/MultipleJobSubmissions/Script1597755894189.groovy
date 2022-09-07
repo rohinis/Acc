@@ -68,12 +68,14 @@ try {
 	//WebUI.setText(findTestObject('JobMonitoringPage/JM_SearchBox'),AllJobsUser)
 	WebUI.sendKeys(findTestObject('JobMonitoringPage/JM_SearchBox'), 'shJob')
 	extentTest.log(LogStatus.PASS, 'Searched for shjob')
-	String myXpath="//a[contains(@class,'show-text-ellipsis')][contains(text(),'"+jobidSH+"')]"
+	//String myXpath="//a[contains(@class,'show-text-ellipsis')][contains(text(),'"+jobidSH+"')]"
+	String myXpath="//a[contains(@title,'"+jobidSH+"')]"
 	println (myXpath)
 	TestObject jobRow = new TestObject('objectName')
 	jobRow.addProperty('xpath', ConditionType.EQUALS, myXpath)
 	WebUI.delay(2)
 	WebUI.mouseOver(jobRow)
+	WebUI.delay(2)
 	WebUI.click(jobRow)
 	extentTest.log(LogStatus.PASS, 'Selected the job row and initiated resubmit action for shjob ')
 	if(GlobalVariable.G_Browser.equals('Chrome'))
@@ -102,7 +104,7 @@ try {
 	jobRow1.addProperty('xpath', ConditionType.EQUALS, myXpath1)
 	WebUI.delay(2)
 	WebUI.mouseOver(jobRow1)
-	WebUI.click(jobRow1)
+	WebUI.doubleClick(jobRow1)
 	extentTest.log(LogStatus.PASS, 'Selected the job row and initiated resubmit action for pyjob')
 	if(GlobalVariable.G_Browser.equals('Chrome'))
 	{

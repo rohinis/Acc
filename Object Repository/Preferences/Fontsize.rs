@@ -6,12 +6,11 @@
    <elementGuidId>2c94ee4a-8d4f-4812-8c7f-d512be2673a6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//span[contains(text(),'12px')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[contains(text(),'12px')]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

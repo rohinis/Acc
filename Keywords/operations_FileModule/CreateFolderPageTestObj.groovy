@@ -59,7 +59,7 @@ public class CreateFolderPageTestObj {
 		String x2 =GlobalVariable.G_userName
 		String x3
 		String x4
-		String xpath_compressedfileXpath 
+		String xpath_compressedfileXpath
 		if (TestCaseName.contains('tile view')) {
 			xpath_compressedfileXpath = "//label[@id='file_text'][contains(@title,'MyFolderCompress_LV_archive_')]"
 		}

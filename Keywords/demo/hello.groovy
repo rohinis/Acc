@@ -61,7 +61,6 @@ public class hello {
 					extentTest.log(LogStatus.PASS, 'Navigated to ToPaste Folder')
 					folderToCheck='MyFolderCopy_LV'
 					WebUI.delay(2)
-
 				}
 				WebUI.click(findTestObject('FilesPage/TopMenuIcon_ellipses'))
 				extentTest.log(LogStatus.PASS, 'Clicked on top menu ellipses')
@@ -312,9 +311,6 @@ public class hello {
 
 				return result
 				break
-
-
-
 		}
 	}
 }

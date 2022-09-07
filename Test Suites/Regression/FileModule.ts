@@ -16,6 +16,7 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/PreReq/Pre-Req-Script-FileOps</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -32,7 +33,7 @@
    <testCaseLink>
       <guid>7538c095-2322-4ac9-9852-966b674b04da</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/FilesModule/ContextMenu_CreateFile</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -43,6 +44,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForCreateFile</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>343f04f1-0bfc-4a3f-a7eb-18897ba908b7</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -65,7 +67,7 @@
    <testCaseLink>
       <guid>d419ec4d-36d8-4310-b05d-cd3110505979</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/FilesModule/Create_file</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -76,6 +78,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForCreateFile</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>96894f36-b3bc-4170-bc1e-231f3e4d975f</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -98,7 +101,7 @@
    <testCaseLink>
       <guid>2d01540e-c9e5-441b-aa7e-e253bc3caeb5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/FilesModule/FileOperations</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -109,6 +112,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForFileOperations</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>3c6c79d6-6c5b-4880-b0da-a9b8c5131c9f</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -131,7 +135,7 @@
    <testCaseLink>
       <guid>2f618e12-9205-4d65-92ed-ab15083087af</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/FilesModule/FileOperations _Topmenu_Icons</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -142,6 +146,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForFileOperations</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>20e94f01-cbb9-4df9-97ba-bca831f912a1</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -175,6 +180,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForFileViewer</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>8353c2d7-499a-4fe9-9029-49aedffc2ede</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -203,7 +209,7 @@
    <testCaseLink>
       <guid>c224f674-e547-485c-856c-7ecb4248da75</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/FilesModule/BookMarkOperations</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -214,6 +220,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForBookMarks</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>da6f5dd8-b094-4106-91ea-49763fc6fde9</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -248,7 +255,7 @@
    <testCaseLink>
       <guid>1a6c3a9d-3649-4f20-b590-f44e2807874f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/FilesModule/FileViewerOperations - DoubleClick</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -259,6 +266,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForFileViewer</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>bd2f2c0c-a674-4467-815f-5bef8323db15</testDataLinkId>
          <type>DATA_COLUMN</type>

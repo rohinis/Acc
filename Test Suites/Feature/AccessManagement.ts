@@ -20,11 +20,12 @@
          <combinationType>ONE</combinationType>
          <id>32dc3266-132e-4628-9a9d-e0de47672d48</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>SPECIFIC</iterationType>
+            <value>8</value>
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForAccess_Management</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>32dc3266-132e-4628-9a9d-e0de47672d48</testDataLinkId>
          <type>DATA_COLUMN</type>

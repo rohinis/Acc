@@ -27,16 +27,17 @@ def LogStatus = com.relevantcodes.extentreports.LogStatus
 def extentTest = extent.startTest(TestCaseName)
 CustomKeywords.'toLogin.ForLogin.Login'(extentTest)
 //=====================================================================================
-String ReportFile = GlobalVariable.G_ReportName + '.html'
+/*String ReportFile = GlobalVariable.G_ReportName + '.html'
 
 def extent = CustomKeywords.'reports.Generatereport.create'(ReportFile, GlobalVariable.G_Browser, GlobalVariable.G_BrowserVersion)
 
 def LogStatus = com.relevantcodes.extentreports.LogStatus
 
-def extentTest = extent.startTest(TestCaseName)
+def extentTest = extent.startTest(TestCaseName)*/
 
 try {
 WebUI.delay(2)
+
 
     //click on the user menu
     WebUI.click(findTestObject('Object Repository/change_password/unityuser'))

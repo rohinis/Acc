@@ -62,8 +62,7 @@ public class setPrefrenceHidden {
 	}
 
 	@Keyword
-	def checkHiddenItems(def preValue, TestCaseName, extentTest)
-	{
+	def checkHiddenItems(def preValue, TestCaseName, extentTest) {
 		TestObject newFileObj
 		TestObject newFolderObj
 		def isFilePresent
@@ -76,18 +75,15 @@ public class setPrefrenceHidden {
 			WebUI.delay(2)
 			newFileObj = WebUI.modifyObjectProperty(findTestObject('FilesPage/RowItem_File_TileView'), 'title', 'equals', ".hiddenFile",true)
 			newFolderObj = WebUI.modifyObjectProperty(findTestObject('FilesPage/FolderRowItem_TileView'), 'title', 'equals',".hiddenFolder", true )
-
 		} else {
 			newFileObj = WebUI.modifyObjectProperty(findTestObject('FilesPage/RowItem_File_ListView'), 'title', 'equals', ".hiddenFile",		true)
 			newFolderObj = WebUI.modifyObjectProperty(findTestObject('FilesPage/FolderRowItem_ListView'), 'title','equals', ".hiddenFolder", true)
-
 		}
 
 		isFilePresent=WebUI.verifyElementPresent(newFileObj, 3, FailureHandling.CONTINUE_ON_FAILURE)
 		isFolderPresent=WebUI.verifyElementPresent(newFolderObj, 3, FailureHandling.CONTINUE_ON_FAILURE)
 
-		if(preValue)
-		{
+		if(preValue) {
 			if(isFilePresent && isFilePresent) {
 				extentTest.log(LogStatus.PASS, 'Hidden File Present - '+isFilePresent+' Hidden Folder present - '+isFilePresent)
 				result=true
@@ -96,10 +92,8 @@ public class setPrefrenceHidden {
 				extentTest.log(LogStatus.FAIL, 'Hidden File/Folder not listed ')
 				result=false
 			}
-
 		}
-		else
-		{
+		else {
 			if(isFilePresent && isFilePresent) {
 				extentTest.log(LogStatus.FAIL, 'Hidden File Present - '+isFilePresent+' Hidden Folder present - '+isFilePresent +"- for prefrece set to false" )
 				result=false
@@ -109,18 +103,15 @@ public class setPrefrenceHidden {
 				result=true
 			}
 		}
-
 	}
 	@Keyword
-	def navigateTo(String TestCaseName , String userChoice ,extentTest)
-	{
+	def navigateTo(String TestCaseName , String userChoice ,extentTest) {
 
 		def navLocation =(new generateFilePath.filePath()).execLocation()
 		def location = navLocation + '/HiddenItems/'
 
-		
-		if(userChoice=='Input'||userChoice=='Output')
-		{
+
+		if(userChoice=='Input'||userChoice=='Output') {
 			WebUI.click(findTestObject('Object Repository/JobMonitoringPage/a_Reset'))
 			TestObject newJobFilter = WebUI.modifyObjectProperty(findTestObject('JobMonitoringPage/label_jobState'), 'text', 'equals',
 					'Completed', true)
@@ -131,10 +122,8 @@ public class setPrefrenceHidden {
 			WebUI.rightClick(newJobRow)
 			WebUI.click(findTestObject('JobMonitoringPage/ViewDetails_Jobs'))
 			extentTest.log(LogStatus.PASS, 'Click on view details job')
-
 		}
-		if(userChoice=='Running')
-		{
+		if(userChoice=='Running') {
 			WebUI.click(findTestObject('Object Repository/JobMonitoringPage/a_Reset'))
 			TestObject newJobFilter = WebUI.modifyObjectProperty(findTestObject('JobMonitoringPage/label_jobState'), 'text', 'equals',
 					'Running', true)
@@ -145,7 +134,6 @@ public class setPrefrenceHidden {
 			WebUI.rightClick(newJobRow)
 			WebUI.click(findTestObject('JobMonitoringPage/ViewDetails_Jobs'))
 			extentTest.log(LogStatus.PASS, 'Click on view details job')
-			
 		}
 
 		switch (userChoice) {
@@ -201,11 +189,7 @@ public class setPrefrenceHidden {
 				extentTest.log(LogStatus.PASS, 'Click on Running Folder')
 				break
 		}
-
-
-
 	}
-
 }
 
 

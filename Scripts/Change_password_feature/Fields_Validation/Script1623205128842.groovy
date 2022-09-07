@@ -64,7 +64,7 @@ try {
 			break
 
 		case 'WeakPassword':
-			CustomKeywords.'change_password_feature.entering_passwords.clickonchangepassword'(oldpassword, newpassword, confirmpassword,extentTest)
+			CustomKeywords.'change_password_feature.entering_passwords.clickonchangepassword'(GlobalVariable.G_Password, newpassword, confirmpassword,extentTest)
 
 			WebUI.click(findTestObject('Object Repository/change_password/button'))
 			WebUI.delay(8)

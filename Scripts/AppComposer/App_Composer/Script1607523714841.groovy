@@ -42,7 +42,7 @@ CustomKeywords.'toLogin.ForLogin.Login'(extentTest)
 
 String screenShot = ((('ExtentReports/' + TestCaseName) + userChoice) + GlobalVariable.G_Browser) + '.png'
 
-def result
+
 
 WebUI.delay(2)
 
@@ -797,6 +797,8 @@ try {
             WebUI.click(findTestObject('AppComposer/Submit_btn'))
 
             extentTest.log(LogStatus.PASS, 'Click on submit and test  button')
+			
+			WebUI.delay(3)
 
             WebUI.click(findTestObject('AppComposer/CloseButton'))
 
@@ -805,6 +807,11 @@ try {
             WebUI.click(findTestObject('AppComposer/JobsTab'))
 
             extentTest.log(LogStatus.PASS, 'Navigated to Jobs Tab')
+			
+			WebUI.delay(5)
+			
+			WebUI.click(findTestObject('Landing_Page/Btn_Notifiction'))
+			extentTest.log(LogStatus.PASS, 'Click on Notification button to close Notification Panel')
 
             result=WebUI.waitForElementPresent(findTestObject('Notificactions/Notification_JobSubmission'), 5)
 			
@@ -821,7 +828,8 @@ try {
 				extentTest.log(LogStatus.FAIL, 'Jobsubmission failed')
 			}
 
-
+             
+			
             break
            
         case 'No inputfile':
@@ -953,34 +961,45 @@ try {
 
             extentTest.log(LogStatus.PASS, 'Click on close notification')
 
-            /*
+            
 			
 			WebUI.click(findTestObject('AppComposer/JobsTab'))
 			extentTest.log(LogStatus.PASS, 'Navigated to Jobs Tab')
 			
 			
+			WebUI.click(findTestObject('Landing_Page/Btn_Notifiction'))
+			extentTest.log(LogStatus.PASS, 'Click on Notification button to close Notification Panel')
+
 			WebUI.waitForElementPresent(findTestObject('Notificactions/Notification_JobSubmission'), 5)
 			
 			def jobText = WebUI.getText(findTestObject('Notificactions/Notification_JobSubmission'))
+			result = WebUI.verifyElementPresent(findTestObject('Notificactions/Notification_JobSubmission'), 3)
+			  CustomKeywords.'operations_JobsModule.GetJobRowDetails.getJobID'(jobText)
 			
-			CustomKeywords.'operations_JobsModule.GetJobRowDetails.getJobID'(jobText)
-			
-			 
-			
-				extentTest.log(LogStatus.PASS, 'Job ID - ' + GlobalVariable.G_JobID)
+			 extentTest.log(LogStatus.PASS, 'Job ID - ' + GlobalVariable.G_JobID)
 	        
-*/
+			 if(result) {
+				 extentTest.log(LogStatus.PASS, 'Verify queued jobs has been submitted successfully' )
+			 
+			 }
+			 else {
+				 extentTest.log(LogStatus.PASS, 'Failed to verify')
+			 }
+			 
+
             break
+			
     }
     
 	
+	if(result) {
+		extentTest.log(LogStatus.PASS, 'The test case is verified' )
+	extentTest.log(LogStatus.PASS, 'Verify the Tool-tip '+"Required"+' is present')
+	}
+	else {
+		extentTest.log(LogStatus.PASS, 'Failed to verify')
+	}
 	
-	if (result)
-		{
-			extentTest.log(LogStatus.PASS, ('Verified ::  ' + TestCaseName) + ' :: Sucessfully')
-		} else {
-			extentTest.log(LogStatus.FAIL, ( TestCaseName) + ' :: failed')
-		}
 	
 	 
 	

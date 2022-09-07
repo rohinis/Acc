@@ -20,11 +20,12 @@
          <combinationType>ONE</combinationType>
          <id>2f061365-9fe2-4b0f-ac13-e8cc5226950d</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>1-15</value>
+            <iterationType>SPECIFIC</iterationType>
+            <value>9,14,16,20</value>
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForJobDetails</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>2f061365-9fe2-4b0f-ac13-e8cc5226950d</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -64,6 +65,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForJobDetails</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>c83d19f8-43f5-4a16-b490-2588e5abf86c</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -99,10 +101,11 @@
          <id>06eac974-b2c4-4e66-aeb0-8e868195eecc</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
-            <value></value>
+            <value>8,9,11,12</value>
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForJobActions</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>06eac974-b2c4-4e66-aeb0-8e868195eecc</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -142,6 +145,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForJobActionsIcons</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>714b50a0-e97a-44ed-b200-2f8a259a7171</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -170,11 +174,12 @@
          <combinationType>ONE</combinationType>
          <id>fc51b2bc-51f0-4dac-ab56-5dadffc504f0</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>SPECIFIC</iterationType>
+            <value>1</value>
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataFileViewerJobs</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>fc51b2bc-51f0-4dac-ab56-5dadffc504f0</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -226,6 +231,7 @@
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForJobDetails</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>b2c135e0-b504-4ac8-9de4-df310408fb41</testDataLinkId>
          <type>DATA_COLUMN</type>

@@ -59,8 +59,7 @@ public class fileOperations_Icon {
 				extentTest.log(LogStatus.PASS, 'Clicked on top menu item - Paste ')
 				WebUI.delay(2)
 				TestObject newFileObj
-				if (TestCaseName.contains('tile view'))
-				{
+				if (TestCaseName.contains('tile view')) {
 					WebUI.delay(2)
 					newFileObj = WebUI.modifyObjectProperty(findTestObject('FilesPage/RowItem_File_TileView'), 'title', 'equals', fileToCheck, true)
 				}
@@ -182,7 +181,7 @@ public class fileOperations_Icon {
 
 				WebUI.delay(2)
 				(new operations_FileModule.notifications()).getNotifications(msg,extentTest)
-				
+
 				return result
 				break
 
@@ -267,7 +266,7 @@ public class fileOperations_Icon {
 
 				msg = '1 item deleted successfully'
 				WebUI.delay(2)
-				
+
 				if (TestCaseName.contains('Job Submission')) {
 					oriFileName='ToDelete.txt'
 					newFileObjVerify = WebUI.modifyObjectProperty(findTestObject('FilesPage/RowItem_File_ListView'), 'title', 'equals',oriFileName, true)
@@ -286,14 +285,14 @@ public class fileOperations_Icon {
 				if(isFilePresent) {
 					result=false
 					extentTest.log(LogStatus.FAIL, 'Verified file - '+oriFileName+' is listed ')
-					
+
 				}
 				else {
 					result=true
 					extentTest.log(LogStatus.PASS, 'Verified file - '+oriFileName+' is not listed ')
 				}
-			
-				return result							
+
+				return result
 				break
 
 

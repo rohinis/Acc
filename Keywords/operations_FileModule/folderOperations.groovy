@@ -91,10 +91,10 @@ public class folderOperations {
 				else {
 					newFolderObj = WebUI.modifyObjectProperty(findTestObject('Object Repository/FilesPage/FolderRowItem_ListView'), 'title', 'equals', folderToCheck, true)
 				}
-				
-				
+
+
 				def isFilePresent=WebUI.waitForElementVisible(newFolderObj, 10,FailureHandling.CONTINUE_ON_FAILURE)
-				
+
 				if(isFilePresent){
 					extentTest.log(LogStatus.PASS, 'Verified Pasted Folder - '+ folderToCheck)
 					result=true
@@ -104,7 +104,7 @@ public class folderOperations {
 
 					WebUI.delay(2)
 				}
-				
+
 				if(TestCaseName.contains('Job Submission')) {
 					msg=GlobalVariable.G_StageArea+'/'+GlobalVariable.G_userName+'/JobsModule/JobsModuleFolderOps/'+folderToCheck+' copied successfully to '+ GlobalVariable.G_StageArea+'/'+GlobalVariable.G_userName+'/JobsModule/JobsModuleFolderOps/ToPaste.'
 				}
@@ -203,7 +203,7 @@ public class folderOperations {
 
 					WebUI.delay(2)
 				}
-				
+
 				if(TestCaseName.contains('Job Submission')) {
 					msg=GlobalVariable.G_StageArea+'/'+GlobalVariable.G_userName+'/JobsModule/JobsModuleFolderOps/'+folderToCheck+' moved successfully to '+ GlobalVariable.G_StageArea+'/'+GlobalVariable.G_userName+'/JobsModule/JobsModuleFolderOps/ToPaste.'
 				}
@@ -212,9 +212,9 @@ public class folderOperations {
 				}
 
 				WebUI.delay(2)
-				
+
 				(new operations_FileModule.notifications()).getNotifications(msg,extentTest)
-				
+
 
 				return result
 				break
@@ -278,7 +278,7 @@ public class folderOperations {
 					WebUI.delay(2)
 				}
 				(new operations_FileModule.notifications()).getNotifications(msg,extentTest)
-				
+
 				return result
 				break
 
@@ -370,8 +370,8 @@ public class folderOperations {
 				}
 
 				msg = '1 item deleted successfully'
-			
-						
+
+
 
 				if (TestCaseName.contains('Job Submission')) {
 					oriFolderName='MyFolderDelete_LV'
