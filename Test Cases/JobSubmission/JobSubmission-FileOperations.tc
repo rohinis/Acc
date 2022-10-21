@@ -43,7 +43,7 @@
       <name>AppName</name>
    </variable>
    <variable>
-      <defaultValue>'ToOpen_LV.txt'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>d7386246-6246-4cc7-b688-3ceed1d43158</id>
       <masked>false</masked>

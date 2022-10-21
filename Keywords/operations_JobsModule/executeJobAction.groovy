@@ -282,21 +282,19 @@ public class executeJobAction {
 
 
 			/*	def downloadLoc=GlobalVariable.G_DownloadFolder
-				File downloadFolder = new File("C://KatalonDownloads")
-
-				List namesOfFiles = Arrays.asList(downloadFolder.list())
-				println(namesOfFiles.size())
-				if (namesOfFiles.contains('ForFileViewer.txt')) {
-					println('success')
-					//extentTest.log(LogStatus.PASS, 'file to downloaded ')
-					result=true
-				} else {
-					println('fail')
-					result=false
-				}
-
-				return true
-*/
+			 File downloadFolder = new File("C://KatalonDownloads")
+			 List namesOfFiles = Arrays.asList(downloadFolder.list())
+			 println(namesOfFiles.size())
+			 if (namesOfFiles.contains('ForFileViewer.txt')) {
+			 println('success')
+			 //extentTest.log(LogStatus.PASS, 'file to downloaded ')
+			 result=true
+			 } else {
+			 println('fail')
+			 result=false
+			 }
+			 return true
+			 */
 
 				result=true
 				break
