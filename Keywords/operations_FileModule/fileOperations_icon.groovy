@@ -257,7 +257,7 @@ public class fileOperations_Icon {
 				TestObject newFileObjVerify
 				def oriFileName
 				WebUI.delay(1)
-				WebUI.click(findTestObject('Object Repository/FilesPage/FilesDelete_img'))
+				WebUI.click(findTestObject(findTestObject('Object Repository/JobSubmissionForm/Icon_DeleteIcon_RFB')))
 				WebUI.delay(2)
 				extentTest.log(LogStatus.PASS, 'Clicked on top menu icon -'+op)
 				WebUI.click(findTestObject('GenericObjects/btn_Yes'))
@@ -269,7 +269,7 @@ public class fileOperations_Icon {
 
 				if (TestCaseName.contains('Job Submission')) {
 					oriFileName='ToDelete.txt'
-					newFileObjVerify = WebUI.modifyObjectProperty(findTestObject('FilesPage/RowItem_File_ListView'), 'title', 'equals',oriFileName, true)
+					newFileObjVerify = WebUI.modifyObjectProperty(findTestObject('Object Repository/JobSubmissionForm/Icon_DeleteIcon_RFB'), 'title', 'equals',oriFileName, true)
 				}
 				else {
 					if(TestCaseName.contains('tile view')) {

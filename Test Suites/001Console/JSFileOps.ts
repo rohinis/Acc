@@ -45,7 +45,7 @@
          <combinationType>ONE</combinationType>
          <id>6cca387c-ae79-43df-af08-1d94db925586</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
+            <iterationType>SPECIFIC</iterationType>
             <value>1-12</value>
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForFileOperations</testDataId>
@@ -85,14 +85,14 @@
    <testCaseLink>
       <guid>0acca874-3122-46ab-a72c-14d70712430b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/JobSubmission/JobSubmission-FileOperations</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>883adf85-4cf5-4f4f-88d8-f75382095594</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>SPECIFIC</iterationType>
+            <value>15</value>
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForFileOperations</testDataId>
       </testDataLink>
@@ -138,7 +138,7 @@
          <id>c166dacf-f745-4dfb-abe6-ed17c8037188</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
-            <value></value>
+            <value>1-10</value>
          </iterationEntity>
          <testDataId>Data Files/Regression/TestDataForFolderOperations</testDataId>
       </testDataLink>

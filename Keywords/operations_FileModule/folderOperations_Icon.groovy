@@ -256,15 +256,15 @@ public class folderOperations_Icon {
 				WebUI.delay(2)
 
 				def delIcon
-				delIcon=WebUI.waitForElementPresent(findTestObject('Object Repository/FilesPage/FilesDelete_img'), 4, FailureHandling.CONTINUE_ON_FAILURE)
+				delIcon=WebUI.waitForElementPresent(findTestObject('Object Repository/JobSubmissionForm/Icon_DeleteIcon_RFB'), 4, FailureHandling.CONTINUE_ON_FAILURE)
 				if(delIcon) {
-					WebUI.click(findTestObject('Object Repository/FilesPage/FilesDelete_img'))
+					WebUI.click(findTestObject('Object Repository/JobSubmissionForm/Icon_DeleteIcon_RFB'))
 					WebUI.delay(2)
 				}
 				else {
 					extentTest.log(LogStatus.PASS, 'Delete icon not displayed yet ')
 					WebUI.delay(2)
-					WebUI.click(findTestObject('Object Repository/FilesPage/FilesDelete_img'))
+					WebUI.click(findTestObject('Object Repository/JobSubmissionForm/Icon_DeleteIcon_RFB'))
 				}
 
 				extentTest.log(LogStatus.PASS, 'Clicked on Delete menu item' )
@@ -334,11 +334,9 @@ public class folderOperations_Icon {
 					else {
 						oriFolderName='MyFolderDownload_LV'
 					}
-				/*	File downloadFolder = new File(GlobalVariable.G_DownloadFolder)
-
-					List namesOfFiles = Arrays.asList(downloadFolder.list())
-
-					if (namesOfFiles.contains(oriFolderName)) {
+					/*	File downloadFolder = new File(GlobalVariable.G_DownloadFolder)
+				 List namesOfFiles = Arrays.asList(downloadFolder.list())
+				 if (namesOfFiles.contains(oriFolderName)) {
 				 println('success')
 				 //extentTest.log(LogStatus.PASS, 'Verified the folder downloaded in C:\\katalonDownloads - '+oriFolderName+'.zip')
 				 result= true

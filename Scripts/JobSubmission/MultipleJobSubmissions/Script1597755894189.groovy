@@ -9,6 +9,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.relevantcodes.extentreports.LogStatus as LogStatus
+import org.openqa.selenium.Keys as Keys
 
 import internal.GlobalVariable as GlobalVariable
 
@@ -68,6 +69,8 @@ try {
 	//WebUI.setText(findTestObject('JobMonitoringPage/JM_SearchBox'),AllJobsUser)
 	WebUI.sendKeys(findTestObject('JobMonitoringPage/JM_SearchBox'), 'shJob')
 	extentTest.log(LogStatus.PASS, 'Searched for shjob')
+	WebUI.delay(2)
+	WebUI.sendKeys(findTestObject('JobMonitoringPage/JM_SearchBox'), Keys.chord(Keys.ENTER))
 	//String myXpath="//a[contains(@class,'show-text-ellipsis')][contains(text(),'"+jobidSH+"')]"
 	String myXpath="//a[contains(@title,'"+jobidSH+"')]"
 	println (myXpath)
@@ -99,6 +102,8 @@ try {
 	WebUI.click(findTestObject('JobMonitoringPage/JM_SearchBox'))
 	WebUI.sendKeys(findTestObject('JobMonitoringPage/JM_SearchBox'), 'pyJob')
 	extentTest.log(LogStatus.PASS, 'Searched for pyjob')
+	WebUI.delay(2)
+	WebUI.sendKeys(findTestObject('JobMonitoringPage/JM_SearchBox'), Keys.chord(Keys.ENTER))
 	String myXpath1="//a[contains(@class,'show-text-ellipsis')][contains(text(),'"+jobidPY+"')]"
 	TestObject jobRow1 = new TestObject('objectName')
 	jobRow1.addProperty('xpath', ConditionType.EQUALS, myXpath1)
